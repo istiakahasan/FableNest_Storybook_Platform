@@ -13,7 +13,7 @@
 
 **Turn any child into the hero of their own personalized, beautifully illustrated storybook using the power of AI.**
 
-[Features](#-key-features) • [Architecture](#-architecture-overview) • [Getting Started](#-getting-started) • [Directory Structure](#-directory-structure) • [Environment Setup](#-environment-variables)
+[Overview](#-overview) • [How It Works](#-how-it-works-the-user-journey) • [Features](#-key-features) • [Architecture](#-architecture-overview) • [Getting Started](#-getting-started) • [Directory Structure](#-directory-structure) • [Environment Setup](#-environment-variables)
 
 </div>
 
@@ -26,6 +26,30 @@
 By simply uploading a photo of a child and selecting their preferences (name, age, gender, story ideas, and artistic styles), FableNest's AI microservice analyzes physical features (skin tone, hair color, facial features) to create character-consistent illustrations and narrative chapters across 5 languages. 
 
 Users can preview their customized book in a 3D digital flipbook, regenerate specific pages, and order downloadable high-resolution PDFs or printed physical books delivered to their door.
+
+---
+
+## 🚀 How It Works (The User Journey)
+
+Creating a magical, personalized storybook in FableNest takes just a few intuitive steps:
+
+```mermaid
+flowchart LR
+    Step1["1. Child Details\n(Name, Age, Language)"] --> Step2["2. Photo Upload\n(Reference Images)"]
+    Step2 --> Step3["3. Style & Story Idea\n(Art Style & Themes)"]
+    Step3 --> Step4["4. AI Generation\n(Feature Match & Illustrations)"]
+    Step4 --> Step5["5. Interactive Preview\n(3D Flipbook)"]
+    Step5 --> Step6["6. Checkout & Delivery\n(PDF / Print)"]
+```
+
+| Step | Phase | Details |
+| :---: | :--- | :--- |
+| **01** | **Child Details** | Enter the child's name, age, gender, and language (*English, Spanish, French, Italian, or Arabic*). |
+| **02** | **Photo Upload** | Upload reference photos of the child to capture physical characteristics. |
+| **03** | **Choose Style & Story Idea** | Select an artistic style (*Pixar 3D, Anime, Children's Manga, Semi-realistic Cartoon*) and describe the story concept or choose a theme. |
+| **04** | **AI Generation** | • **Character Likeness**: Vision AI analyzes the child's photo (skin tone, hair color, facial features) to preserve likeness across illustrations.<br>• **Story & Art**: Generates custom story chapters and matching full-page illustrations. |
+| **05** | **Interactive Preview** | Read through the generated book in a realistic digital 3D flipbook with smooth page-turning before finalizing. |
+| **06** | **E-Commerce & Delivery** | Order the digital PDF download or purchase a physical printed copy via integrated Stripe checkout. |
 
 ---
 
@@ -208,3 +232,4 @@ pnpm dev
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
