@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* Light mode gradient background */
+  --background: linear-gradient(to bottom right, #E5E4FD, white, #CDF4E5) no-repeat;
+  /* --background: url("/latest-bg.gif") no-repeat center center / cover; */
+  --foreground: #0a0a0a;
+
+
+  /* Project's Color Plate */
+  --color-primary-color: #BE0F34;
+  --color-primary-bg-color: #F9E7EB;
+  --color-secondary-bg-color: #FBF9F9;
+
+  /* Geist UI Color Plate */
+  --color-input-text-color: #717182;
+  --color-text-color: #364153;
+  --color-hover-color: #EFF6FF;
+  --color-ghost-text-color: #8E1C46;
+  --color-border-color: #E5E7EB;
+}
+
+@theme inline {
+  /* --color-background: var(--background); */
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+/* body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  /* Remove default margin to avoid overflow */
+  /* Prevent body-level scrollbar */
+  min-height: 100dvh;
+
+}
+
+@theme inline {
+  --color-primary-color: var(--color-primary-color);
+  --color-primary-bg-color: var(--color-primary-bg-color);
+  --color-secondary-bg-color: var(--color-secondary-bg-color);
+  --color-input-text-color: var(--color-input-text-color);
+  --color-text-color: var(--color-text-color);
+  --color-hover-color: var(--color-hover-color);
+  --color-ghost-text-color: var(--color-ghost-text-color);
+  --color-border-color: var(--color-border-color);
+}
