@@ -260,3 +260,4 @@ erDiagram
 - **Fail-Safe Fallbacks**: If Vision model analysis fails on an uploaded portrait, default character description fallbacks engage smoothly without interrupting the generation pipeline.
 - **Stateless Authentication**: JWT tokens with short-lived access lifespans and refresh rotation patterns.
 - **Separation of Concerns**: Compute-heavy AI and image operations are isolated in a Python microservice to prevent blocking Node.js event-loop operations.
+
